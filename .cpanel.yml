@@ -1,0 +1,12 @@
+# untuk menyambungkan file di github ke web hosting
+
+   ---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH  
+
+# apapun yang ada disini (yg di deploy) akan otomatis pindah
+# ke public.html
